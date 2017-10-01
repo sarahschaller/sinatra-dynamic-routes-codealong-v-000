@@ -13,7 +13,7 @@ class App < Sinatra::Base
     "Hello #{@user_name}!"
   end
 
-  get '/goodbye/:name' do 
+  get '/goodbye/:name' do
     @person_name = params[:name]
     "Goodbye, #{@person_name}."
   end 
